@@ -1300,7 +1300,149 @@ a.nav-link-primary:hover {
 
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 /* ONLY affects 404 page because this file is not used anywhere else */
+/* Reset already included from CDN */
 
+/* Base */
+body.error-page {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #3aa0ff, #0077ff);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+
+  animation: fadeIn 0.8s ease;
+}
+
+/* NAV */
+.hero-header {
+  padding: 20px 0;
+}
+
+.nav-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-branding a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-branding a:hover {
+  opacity: 0.7;
+}
+
+.nav-branding-logo img {
+  height: 40px;
+}
+
+/* MAIN SECTION */
+.hero {
+  padding: 40px 20px;
+}
+
+.error-headline-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeUp 1s ease;
+}
+
+/* FLOATING IMAGE */
+.error-page-animation {
+  width: 200px;
+  margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* TEXT */
+.error-page-title {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.error-404 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+h3 {
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+p {
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* LINKS */
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer-global {
+  margin-top: 60px;
+  padding: 40px 20px;
+  list-style: none;
+}
+
+.footer-global li {
+  margin-bottom: 30px;
+}
+
+.footer-awards-list,
+.footer-socials-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 /*
 
 ██████  ██       █████  ██    ██ 
