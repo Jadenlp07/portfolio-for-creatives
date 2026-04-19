@@ -1313,19 +1313,6 @@ body.error-page {
   animation: fadeIn 0.8s ease;
 }
 
-/* NAV */
-.hero-header {
-  padding: 20px 0;
-}
-
-.nav-branding {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
-}
-
 .nav-branding a {
   color: white;
   text-decoration: none;
@@ -1466,7 +1453,7 @@ to keep your styles reusable and consistent.
 */
 
 .play-page {
-  /* Add page-specific layout or container styles here */
+  background: linear-gradient(135deg, #3aa0ff, #0077ff);
 }
 
 /*
