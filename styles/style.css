@@ -1301,40 +1301,6 @@ a.nav-link-primary:hover {
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 
 /* Reset */
-/* Reset */
-/* Body ONLY for 404 */
-.error-page {
-  background: linear-gradient(135deg, #3aa0ff, #0077ff);
-  color: white;
-  text-align: center;
-  padding: 40px;
-  animation: fadeIn 0.8s ease;
-}
-
-/* Scope everything */
-.error-page main {
-  margin-top: 80px;
-  animation: fadeInUp 1s ease;
-}
-
-.error-page h1 {
-  font-size: 120px;
-  letter-spacing: 5px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.error-page h2 {
-  font-size: 32px;
-}
-
-.error-page a {
-  color: white;
-}
-
-.error-page main a {
-  border: 2px solid white;
-  border-radius: 30px;
-}
 
 /*
 
