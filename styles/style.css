@@ -1300,20 +1300,94 @@ a.nav-link-primary:hover {
 
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 
-.error-headline-wrapper {
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-small);
-  text-align: center;
-  margin: 0 auto;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.error-page-animation {
-  width: 25rem;
+/* Body */
+body {
+  background: linear-gradient(135deg, #3aa0ff, #0077ff);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Header */
+header h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 120px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+/* Buttons/Links */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+main a:hover {
+  background: white;
+  color: #0077ff;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+}
+
+footer a {
+  margin: 0 10px;
 }
 
 /*
