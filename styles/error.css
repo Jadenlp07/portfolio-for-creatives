@@ -1,5 +1,5 @@
 /* 🔥 MAIN ERROR TEXT (clear visible animation) */
-.error-404 {
+.error-page .error-404 {
   font-size: 80px;
   font-weight: 900;
   letter-spacing: 3px;
@@ -12,12 +12,10 @@
   display: inline-block;
 
   /* Stronger animation */
-  animation:
-    bounce 1.5s ease-in-out infinite,
-    pulse 2s ease-in-out infinite;
+  animation: bounce 1.5s ease-in-out infinite;
 }
 
-/* 🔥 Bounce (more noticeable movement) */
+/* 🔥 Bounce animation (clean + visible) */
 @keyframes bounce {
   0%,
   100% {
@@ -28,18 +26,30 @@
   }
 }
 
-/* 🔥 Pulse (size change) */
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
+/* 🔥 Back to Home Button */
+.error-page .back-home-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+
+  border: 2px solid white;
+  border-radius: 999px; /* pill shape */
+
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: all 0.3s ease;
 }
 
-/* ✨ Layout only (no button styling anymore) */
+/* Hover effect */
+.error-page .back-home-btn:hover {
+  background: white;
+  color: #0077ff;
+  transform: scale(1.05);
+}
+
+/* Layout */
 .error-headline-wrapper {
   margin-top: 80px;
   text-align: center;

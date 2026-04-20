@@ -1453,7 +1453,7 @@ to keep your styles reusable and consistent.
 */
 
 .play-page {
-  background: linear-gradient(135deg, #3aa0ff, #0077ff);
+  background: linear-gradient(135deg, hsl(198, 95%, 92%), #016080);
 }
 
 /*
