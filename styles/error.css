@@ -1,4 +1,4 @@
-/* 🔥 MAIN ERROR TEXT */
+/* 🔥 MAIN ERROR TEXT (clean animation instead of glitch) */
 .error-404 {
   font-size: 80px;
   font-weight: 900;
@@ -9,72 +9,36 @@
   background-clip: text;
   color: transparent;
 
-  position: relative;
   display: inline-block;
 
-  animation: flicker 2s infinite;
+  /* NEW animations */
+  animation:
+    float 4s ease-in-out infinite,
+    glow 2.5s ease-in-out infinite alternate;
 }
 
-/* Glitch layers (NOW MATCHES TEXT) */
-.error-404::before,
-.error-404::after {
-  content: attr(class); /* safer fallback if text changes */
-  content: "Well… this is awkward";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  color: white;
-  opacity: 0.6;
-}
-
-/* Red shift */
-.error-404::before {
-  transform: translate(-2px, 0);
-  animation: glitch-red 1s infinite;
-}
-
-/* Blue shift */
-.error-404::after {
-  transform: translate(2px, 0);
-  animation: glitch-cyan 1s infinite;
-}
-
-/* ✨ Subtle flicker */
-@keyframes flicker {
+/* ✨ Smooth floating */
+@keyframes float {
   0%,
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
   50% {
-    opacity: 0.85;
+    transform: translateY(-12px);
   }
 }
 
-/* Glitch animations (cleaner) */
-@keyframes glitch-red {
-  0%,
-  100% {
-    transform: translate(-2px, 0);
+/* ✨ Glow effect */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
   }
-  50% {
-    transform: translate(-4px, 1px);
-  }
-}
-
-@keyframes glitch-cyan {
-  0%,
-  100% {
-    transform: translate(2px, 0);
-  }
-  50% {
-    transform: translate(4px, -1px);
+  to {
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
   }
 }
 
-/* 🔥 BUTTON (this is what you were missing) */
+/* 🔥 BUTTON */
 .error-headline-wrapper a {
   display: inline-block;
   margin-top: 25px;
@@ -97,7 +61,7 @@
   transform: scale(1.1);
 }
 
-/* Optional: center spacing */
+/* Layout spacing */
 .error-headline-wrapper {
   margin-top: 80px;
   text-align: center;
