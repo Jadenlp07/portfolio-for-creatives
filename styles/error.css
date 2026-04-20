@@ -1,4 +1,4 @@
-/* 🔥 MAIN ERROR TEXT (clean animation instead of glitch) */
+/* 🔥 MAIN ERROR TEXT (clear visible animation) */
 .error-404 {
   font-size: 80px;
   font-weight: 900;
@@ -11,57 +11,35 @@
 
   display: inline-block;
 
-  /* NEW animations */
+  /* Stronger animation */
   animation:
-    float 4s ease-in-out infinite,
-    glow 2.5s ease-in-out infinite alternate;
+    bounce 1.5s ease-in-out infinite,
+    pulse 2s ease-in-out infinite;
 }
 
-/* ✨ Smooth floating */
-@keyframes float {
+/* 🔥 Bounce (more noticeable movement) */
+@keyframes bounce {
   0%,
   100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-20px);
   }
 }
 
-/* ✨ Glow effect */
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+/* 🔥 Pulse (size change) */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
   }
-  to {
-    text-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+  50% {
+    transform: scale(1.08);
   }
 }
 
-/* 🔥 BUTTON */
-.error-headline-wrapper a {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 25px;
-
-  border: 2px solid white;
-  border-radius: 30px;
-
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-
-  transition: 0.3s ease;
-}
-
-/* Hover pop */
-.error-headline-wrapper a:hover {
-  background: white;
-  color: #0077ff;
-  transform: scale(1.1);
-}
-
-/* Layout spacing */
+/* ✨ Layout only (no button styling anymore) */
 .error-headline-wrapper {
   margin-top: 80px;
   text-align: center;
