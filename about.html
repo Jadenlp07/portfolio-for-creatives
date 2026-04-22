@@ -4,19 +4,19 @@
     <title>Jaden Prevost About Me Page</title>
     <meta
       name="description"
-      content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+      content="Get to know Jaden Prevost, a designer and developer focused on creativity, innovation, and building impactful digital and visual experiences."
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="assets/branding-images/favicon.svg"
+      href="assets/branding-images/jaden-prevost-logo.svg"
     />
     <link
       rel="icon"
       type="image/png"
-      href="assets/branding-images/favicon.png"
+      href="assets/branding-images/jaden-prevost-logo.svg"
     />
     <meta property="og:image" content="screenshot.jpg" />
     <link
@@ -36,13 +36,28 @@
   <body class="about-page">
     <header class="hero-header">
       <ul class="nav-branding">
-        <li><a href="index.html" class="nav-branding">Work</a></li>
+        <!-- Logo (standalone LI) -->
         <li class="nav-branding-logo">
-          <a href="index.html"
-            ><img src="assets/branding-images/jaden-prevost-logo.svg"
-          /></a>
+          <a href="index.html">
+            <img
+              src="assets/branding-images/jaden-prevost-logo.svg"
+              alt="Jaden Prevost logo"
+            />
+          </a>
         </li>
-        <li><a href="about.html" class="custom-navigation">About</a></li>
+        <li class="nav-branding-item">
+          <ul class="nav-branding-group">
+            <li class="nav-branding-item">
+              <a href="index.html" class="nav-link-primary">Work</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="play.html" class="nav-link-primary">Play</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="about.html" class="nav-link-primary">About</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </header>
     <ul class="about-grid">
